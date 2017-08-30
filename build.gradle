@@ -1,0 +1,15 @@
+repositories {
+  mavenCentral()
+}
+
+configurations { download }
+
+dependencies {
+  download(dependency) { exclude group: '*' }
+}
+
+task printPath {
+  doLast {
+    configurations.download.each { println it.path }
+  }
+}
