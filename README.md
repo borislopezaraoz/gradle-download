@@ -6,7 +6,12 @@ For example in a continuous integration pipeline you want to download an artifac
 
 ## How to
 
-Example  
+Example: download spring web jar  
 ```
 ./download.sh "org.springframework:spring-web:3.0.5.RELEASE"
+```
+Example: download other file type  
+
+```
+./download.sh "org.springframework:spring-web:3.0.5.RELEASE@pom"
 ```
